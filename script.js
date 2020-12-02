@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for (i=0; i<256; i++) {
         const gridArea= document.createElement("div");
         gridArea.className="gridDivs";
-       gridArea.innerText="divs";
+      // gridArea.innerText="divs";
         container.appendChild(gridArea);
     };
   

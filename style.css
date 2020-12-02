@@ -24,4 +24,5 @@ body {
 #container > *{
     background:white;
     border:solid 1px black;
+    min-block-size: 25px;
 }
