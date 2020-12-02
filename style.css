@@ -3,11 +3,16 @@ body {
     font-family: 'Nunito Semibold';
 			text-align: center;
 }
+
 #container{
     display: grid;
-    grid-template-columns: repeat (8, 1fr);
-    grid-auto-rows: minmax (150px, auto);
+    grid-template-columns: repeat(16, 1fr);
+    grid-auto-rows: minmax(150px, auto);
     grid-gap: 10px;
-    max-width:960px;
+    max-width: 960px;
     margin: 0 auto;
+}
+#container div{
+    background: #333;
+    padding:30px;
 }
