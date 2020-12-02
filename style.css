@@ -1,28 +1,34 @@
 body {
-    background-color: grey;
+   
     font-family: 'Nunito Semibold';
 			text-align: center;
 }
 
 #container{
+    
     display: grid;
-
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-   /* grid-auto-rows: minmax(100px, auto);
-    grid-auto-columns: minmax(100px, auto);*/
     grid-auto-columns: minmax(100px, 960px);
     grid-auto-rows: minmax(100px, auto);
     /*grid-gap: 10px;*/
     max-width: 960px;
-    max-height:auto;
-    margin: 0 auto;
+    max-height:960px;
+    margin: 70px auto;
     border: solid 5px;
+    justify-content: center;
+    align-content: center;
     
     
 }
 #container > *{
-    background:white;
+   
     border:solid 1px black;
-    min-block-size: 25px;
+   min-block-size: 25px;
+   
+   
+}
+
+.hoverClass {
+    background-color: black;
 }
