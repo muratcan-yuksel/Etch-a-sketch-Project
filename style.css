@@ -35,9 +35,10 @@ body {
 
 .squares {
     border:solid 1px black;
-   /*min-block-size: 15px;
-   max-block-size: 25px;*/
-   width: 100%;
+   min-block-size: 15px;
+   max-block-size: 25px;
+   width: auto;
+   height:auto;
 }
 .squares:after {
     content: "";
