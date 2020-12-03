@@ -3,35 +3,22 @@ body {
     font-family: 'Nunito Semibold';
 			text-align: center;
 }
-
+/*
 #container{
     
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    /*grid-auto-columns: minmax(100px, 960px);
-    grid-auto-rows: minmax(100px, auto);
-    /*grid-gap: 10px;*/
+   
     max-width: 560px;
     max-height:960px;
     margin: 70px auto;
     border: solid 5px;
-    /*justify-content: center;
-    align-content: center;*/
+  
     
     
 }
-/*
-#container > *{
-   
-    border:solid 1px black;
-   min-block-size: 15px;
-   max-block-size: 25px;
-  
-   
-   
-   
-}*/
+
 
 .squares {
     border:solid 1px black;
@@ -45,7 +32,26 @@ body {
     display: inline-block;
     padding-bottom: 100%;
   }
-
+*/
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    margin: 70px auto;
+    border: solid 5px;
+    
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .squares {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
 .hoverClass {
     background-color: black;
 }
