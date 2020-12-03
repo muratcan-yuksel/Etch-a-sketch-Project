@@ -3,36 +3,7 @@ body {
     font-family: 'Nunito Semibold';
 			text-align: center;
 }
-/*
-#container{
-    
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-   
-    max-width: 560px;
-    max-height:960px;
-    margin: 70px auto;
-    border: solid 5px;
-  
-    
-    
-}
 
-
-.squares {
-    border:solid 1px black;
-   min-block-size: 15px;
-   max-block-size: 25px;
-   width: auto;
-   height:auto;
-}
-.squares:after {
-    content: "";
-    display: inline-block;
-    padding-bottom: 100%;
-  }
-*/
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
@@ -40,7 +11,7 @@ body {
   
   #container {
     display: grid;
-    margin: 70px auto;
+    margin: 80px auto;
     border: solid 5px;
     
     grid-template-rows: repeat(var(--grid-rows), 1fr);
