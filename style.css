@@ -48,8 +48,8 @@ body {
   }
   
   .squares {
-    padding: 1em;
-    border: 1px solid #ddd;
+    padding: 1fr;
+    border: 1px solid black;
     text-align: center;
   }
 .hoverClass {
