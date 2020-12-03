@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const container = document.querySelector("#container");
   
-function makeRows(rows, cols) {
+function makeRows(rows) {
     container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
-    for (c = 0; c < (rows * cols); c++) {
+    container.style.setProperty('--grid-cols', rows);
+    for (c = 0; c < (rows * rows); c++) {
         const gridArea= document.createElement("div");
         gridArea.className="squares";
        //gridArea.innerText="divs";
@@ -22,7 +22,7 @@ function makeRows(rows, cols) {
 
   
 
-  makeRows(16, 16);
+  makeRows(16);
 
 
 
