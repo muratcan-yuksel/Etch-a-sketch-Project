@@ -42,7 +42,7 @@ slider.oninput = function() {
 let slideButton= document.getElementById("sliderButton");
 slideButton.addEventListener("click", function(e){
     document.getElementById("container").innerHTML="";
-    makeRows(22);
+    makeRows(output.innerHTML);
 })
 
 
