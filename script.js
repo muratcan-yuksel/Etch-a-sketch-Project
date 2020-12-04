@@ -29,7 +29,7 @@ rainbow.addEventListener("click", function (e){
 });     
     };
   };
-
+//define the height and width with js
   document.getElementById("container").style.width = "50vw";
   document.getElementById("container").style.height = "30vw";
 
