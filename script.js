@@ -12,6 +12,20 @@ function makeRows(rows) {
         gridArea.addEventListener("mouseover", 
         e=> e.target.classList.add("hoverClass")
         )
+        //blackish colorful hovering effect function 
+        let colorful = document.getElementById("rainbow");
+rainbow.addEventListener("click", function (e){
+    gridArea.addEventListener("mouseover", function(e){
+
+    
+    var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    var colorString = '0px 0px 30px 0px ' + color;
+    this.style['box-shadow'] = colorString;
+    this.style['-webkit-box-shadow'] = colorString;
+    this.style['-moz-box-shadow'] = colorString;
+})
+});
+
         
     };
   };
@@ -31,6 +45,7 @@ slider.oninput = function() {
   output.innerHTML = this.value;
   
 }
+
 //slider button
 let slideButton= document.getElementById("sliderButton");
 //updates the container/grids when the button is pressed
