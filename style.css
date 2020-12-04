@@ -1,4 +1,10 @@
+
 body {
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 100%;
     display:grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 0.1fr);
@@ -7,12 +13,14 @@ body {
 			text-align: center;
 }
 
+
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
   }
   
   #container {
+      background-color: white;
     display: grid;
     margin: 80px auto;
     border: solid 5px;
@@ -73,6 +81,27 @@ body {
     grid-column: 1/4;
     grid-row:1/5;
 }
-#rainbow{
-    grid-row:3/5;
+@font-face{
+    font-family:newFont;
+    src:url(slkscr.ttf);
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14.5px;
+    font-family:newFont;
+   
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.elements{
+    font-family:newFont;
 }
