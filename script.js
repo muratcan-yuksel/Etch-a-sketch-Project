@@ -10,12 +10,18 @@ function makeRows(rows) {
         gridArea.className="squares";
         container.appendChild(gridArea);
         //black color hovering
-        let blackButton= document.getElementById("black");
+       /* let blackButton= document.getElementById("black");
         blackButton.addEventListener("click", function(e){
             gridArea.addEventListener("mouseover", 
             e=> e.target.classList.add("hoverClass")
             )
-        })
+        })*/
+        document.getElementById("black").addEventListener("click", blackButtonOn);
+        function blackButtonOn (e){
+          gridArea.addEventListener("mouseover", 
+          e=> e.target.classList.add("hoverClass")
+          )
+        }
         //blackish techno color function
         let colorful = document.getElementById("rainbow");
 rainbow.addEventListener("click", function (e){
