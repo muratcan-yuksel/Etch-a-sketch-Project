@@ -22,9 +22,23 @@ function makeRows(rows) {
           e=> e.target.classList.add("hoverClass")
           )
         }
-        //blackish techno color function
+        document.getElementById("rainbow").addEventListener("click", rainbowButtonOn);
+function rainbowButtonOn (e) {
+
+  document.getElementById("black").removeEventListener("click", blackButtonOn);
+  gridArea.addEventListener("mouseover", function(e){
+    var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    var colorString = '5px 5px 20px 5px ' + color;
+    this.style['box-shadow'] = colorString;
+    this.style['-webkit-box-shadow'] = colorString;
+    this.style['-moz-box-shadow'] = colorString;
+})
+}
+     /*   //blackish techno color function
         let colorful = document.getElementById("rainbow");
 rainbow.addEventListener("click", function (e){
+
+  
     gridArea.addEventListener("mouseover", function(e){
     var color = '#'+Math.floor(Math.random()*16777215).toString(16);
     var colorString = '5px 5px 20px 5px ' + color;
@@ -32,7 +46,10 @@ rainbow.addEventListener("click", function (e){
     this.style['-webkit-box-shadow'] = colorString;
     this.style['-moz-box-shadow'] = colorString;
 })
-});     
+//document.getElementById("black").removeEventListener("click", blackButtonOn);
+});    */
+
+
     };
   };
 //define the height and width with js
