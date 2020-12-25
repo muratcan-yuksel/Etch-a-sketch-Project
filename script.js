@@ -10,46 +10,25 @@ function makeRows(rows) {
         gridArea.className="squares";
         container.appendChild(gridArea);
         //black color hovering
-       /* let blackButton= document.getElementById("black");
+        let blackButton= document.getElementById("black");
         blackButton.addEventListener("click", function(e){
-            gridArea.addEventListener("mouseover", 
-            e=> e.target.classList.add("hoverClass")
-            )
-        })*/
-        document.getElementById("black").addEventListener("click", blackButtonOn);
-        function blackButtonOn (e){
-          gridArea.addEventListener("mouseover", 
-          e=> e.target.classList.add("hoverClass")
-          )
-        }
-        document.getElementById("rainbow").addEventListener("click", rainbowButtonOn);
-function rainbowButtonOn (e) {
-
-  document.getElementById("black").removeEventListener("click", blackButtonOn);
-  gridArea.addEventListener("mouseover", function(e){
-    var color = '#'+Math.floor(Math.random()*16777215).toString(16);
-    var colorString = '5px 5px 20px 5px ' + color;
-    this.style['box-shadow'] = colorString;
-    this.style['-webkit-box-shadow'] = colorString;
-    this.style['-moz-box-shadow'] = colorString;
-})
-}
-     /*   //blackish techno color function
+            gridArea.addEventListener("mouseover", function(e) {
+             e.target.style.backgroundColor="black";
+           
+            })
+        })
+        //blackish techno color function
         let colorful = document.getElementById("rainbow");
 rainbow.addEventListener("click", function (e){
-
-  
     gridArea.addEventListener("mouseover", function(e){
     var color = '#'+Math.floor(Math.random()*16777215).toString(16);
     var colorString = '5px 5px 20px 5px ' + color;
     this.style['box-shadow'] = colorString;
     this.style['-webkit-box-shadow'] = colorString;
     this.style['-moz-box-shadow'] = colorString;
+    e.target.style.backgroundColor= "white";
 })
-//document.getElementById("black").removeEventListener("click", blackButtonOn);
-});    */
-
-
+});     
     };
   };
 //define the height and width with js
