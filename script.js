@@ -13,7 +13,15 @@ function makeRows(rows) {
         let blackButton= document.getElementById("black");
         blackButton.addEventListener("click", function(e){
             gridArea.addEventListener("mouseover", function(e) {
+              //the following copies the rainbow neon effect but changes the pixels to zero
+              //so that they won't have any effect, i.e. reverse the neon effect
+              var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    var colorString = '0px 0px 0px 0px '; // if you add this, you'll get an occasional neon effect + color;
+    this.style['box-shadow'] = colorString;
+    this.style['-webkit-box-shadow'] = color;
+    this.style['-moz-box-shadow'] = color;
              e.target.style.backgroundColor="black";
+           
            
             })
         })
@@ -24,9 +32,9 @@ rainbow.addEventListener("click", function (e){
     var color = '#'+Math.floor(Math.random()*16777215).toString(16);
     var colorString = '5px 5px 20px 5px ' + color;
     this.style['box-shadow'] = colorString;
-    this.style['-webkit-box-shadow'] = colorString;
-    this.style['-moz-box-shadow'] = colorString;
-    e.target.style.backgroundColor= "white";
+    this.style['-webkit-box-shadow'] = color;
+    this.style['-moz-box-shadow'] = color;
+    e.target.style.backgroundColor= `hsl(${Math.random() * 360}, 100%, 50%)`;
 })
 });     
     };
